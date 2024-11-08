@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<style>
+body {
+    font-family: Oswald;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000b2;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    transition: all 0.5s ease-in-out; /* Added animation to header */
+}
+
+header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    margin: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out; /* Added animation to images */
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #000000b2;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.5s ease-in-out; /* Added animation to footer */
+}
+
+footer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+</style>
+
+<body>
+    <header>
+        <h1>My Photography Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my photography portfolio! I'm passionate about capturing moments through my lens.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="tower.jpg.jpg" width="300px" alt="Photo 1">
+            <img src="clouds.jpg.jpg" width="300px" alt="Photo 2">
+            <img src="bike2.jpg.jpeg" height="200px" width="500" alt="Photo 3">
+
+            <!-- Add more photos as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shahvaizahmed5sep2005@gmail.com">shahvaizahmed5sep2005@gmail.com</a></p>
+        <p>Phone:+923338950633</p>
+        <br/>
+        <br/>
+        <br/>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Photography Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
